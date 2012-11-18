@@ -37,7 +37,9 @@ $(function() {
 
   // Fake 'click' when user hits the end of page
   $(window).scroll(function() {
-    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    if (  document.documentElement.clientHeight +
+      $(document).scrollTop() >= document.body.offsetHeight )
+    {
       $('button').click();
       popUp();
     }
