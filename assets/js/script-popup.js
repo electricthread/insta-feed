@@ -30,6 +30,7 @@ $(function() {
           onComplete : function(photos, data) {
           insta_next_url = data.pagination.next_url
           button.text(text)
+          popUp()
         }
       })
     }
@@ -41,7 +42,6 @@ $(function() {
       $(document).scrollTop() >= document.body.offsetHeight )
     {
       $('button').click();
-      popUp();
     }
   });
 
