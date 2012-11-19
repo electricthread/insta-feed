@@ -12,6 +12,7 @@ $(function() {
       show : 20,
       onComplete : function (photos, data) {
       insta_next_url = data.pagination.next_url
+      console.log(data);
     }
   })
 
@@ -34,11 +35,17 @@ $(function() {
     }
   });
 
+function getDocHeight() {
+    var D = document;
+    return Math.max(
+        Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+        Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+        Math.max(D.body.clientHeight, D.documentElement.clientHeight)
+    );
+}
   // Fake 'click' when user hits the end of page
   $(window).scroll(function() {
-    if (  document.documentElement.clientHeight +
-      $(document).scrollTop() >= document.body.offsetHeight )
-    {
+    if($(window).scrollTop() + $(window).height() == getDocHeight()) {
       $('button').click();
     }
   });

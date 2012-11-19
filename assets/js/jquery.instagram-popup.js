@@ -44,17 +44,10 @@
         .addClass('instagram-placeholder')
         .attr('id', photo.id)
         .append(
-          $('<a>')
-            .attr('target', '_blank')
-            .attr('href', photo.images.standard_resolution.url)
-            .attr('rel', 'gal')
-            .append(
-              $('<img>')
-                .addClass('instagram-image')
-                .attr('src', image_url)
-            )
-        )
-    }
+          $('<a>').attr('target', '_blank').attr('href', photo.images.standard_resolution.url).attr('rel', 'gal')
+            .append($('<img>').addClass('instagram-image').attr('src', image_url))
+        ).append('<span class="left"><a target="_blank" href="http://instagram.com/' + photo.user.username + '"><img src="' + photo.user.profile_picture + '" /></a>' + photo.user.username + '</span><span class="right comments">Comments: ' + photo.comments.count + '</span><span class="right likes">Likes:' + photo.likes.count + '</span>');
+      }
 
     function createEmptyElement() {
       return $('<li>')

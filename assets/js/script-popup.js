@@ -36,17 +36,26 @@ $(function() {
     }
   });
 
+function getDocHeight() {
+    var D = document;
+    return Math.max(
+        Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+        Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+        Math.max(D.body.clientHeight, D.documentElement.clientHeight)
+    );
+}
   // Fake 'click' when user hits the end of page
   $(window).scroll(function() {
-    if (  document.documentElement.clientHeight +
-      $(document).scrollTop() >= document.body.offsetHeight )
-    {
+    if($(window).scrollTop() + $(window).height() == getDocHeight()) {
       $('button').click();
     }
   });
 
 // Colorbox
 function popUp() {
-  $(".instagram-placeholder a").colorbox({rel: 'gal'});
+  $("li > a").colorbox({
+    rel: 'gal',
+    maxHeight: "85%"
+  });
 }
 });

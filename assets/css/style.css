@@ -1,26 +1,49 @@
 h1 {
   margin: 2% 5%;
-  font: 40px Helvetica, Arial, sans-serif;
+  float: right;
+  font: 2em Helvetica, Arial, sans-serif;
   color: #3F3F3F;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 img {
   height: auto;
   max-width: 100%;
 }
+ul {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
 li {
+  background: #eee;
   float: left;
   list-style: none;
   margin: 1% 2%;
-  width: 28%;
+  width: 89%;
 }
-li a {
-  background: #2F2F2F;
-  display: block;
-  padding: 5%;
-}
-li a:hover {
+li:hover {
   background-color: #ccc;
+}
+li > a {
+  display: block;
+  padding: 5% 5% 0;
+}
+li span {
+  font-size: 13px;
+  padding: 1% 6% 6%;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+  padding: 2% 6% 0;
+  clear: right;
+}
+.left img {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
 }
 button {
   visibility: hidden;
@@ -36,4 +59,22 @@ button {
 }
 .ajax.loading {
   display: block;
+}
+@media all and (min-width: 400px) {
+  li {
+    width: 46%;
+  }
+}
+@media all and (min-width: 720px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  li {
+    width: 29%;
+  }
+}
+@media all and (min-width: 720px) {
+  li {
+    width: 28%;
+  }
 }
