@@ -55,7 +55,9 @@ function getDocHeight() {
 function popUp() {
   $("li > a").colorbox({
     rel: 'gal',
-    maxHeight: "85%"
+    maxHeight: "85%",
+    slideshow: true,
+    slideshowSpeed: 4000
   });
 }
 });
