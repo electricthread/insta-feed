@@ -78,7 +78,7 @@ button {
     width: 28%;
   }
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 481px) {
   li {
     float: none;
   }
