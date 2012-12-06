@@ -45,7 +45,7 @@ $(function() {
 //     );
 // }
   // Fake 'click' when user hits the end of page
-  $(document).scroll(function() {
+  $(window).scroll(function() {
     if ($(window).scrollTop() + $(window).height() >= $('body').height()) {
       $('button').click();
     }
