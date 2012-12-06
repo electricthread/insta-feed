@@ -13,6 +13,7 @@ ul {
   margin: 0;
   padding: 0;
   clear: both;
+  overflow: hidden;
 }
 li {
   background: #eee;
@@ -78,7 +79,7 @@ button {
     width: 28%;
   }
 }
-@media all and (max-width: 481px) {
+@media all and (max-width: 500px) {
   li {
     float: none;
   }
