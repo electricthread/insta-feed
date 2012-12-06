@@ -78,3 +78,8 @@ button {
     width: 28%;
   }
 }
+@media all and (max-width: 480px) {
+  li {
+    float: none;
+  }
+}
