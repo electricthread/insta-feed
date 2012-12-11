@@ -36,17 +36,17 @@ $(function() {
     }
   });
 
-// function getDocHeight() {
-//     var D = document;
-//     return Math.max(
-//         Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
-//         Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
-//         Math.max(D.body.clientHeight, D.documentElement.clientHeight)
-//     );
-// }
+function getDocHeight() {
+    var D = document;
+    return Math.max(
+        Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+        Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+        Math.max(D.body.clientHeight, D.documentElement.clientHeight)
+    );
+}
   // Fake 'click' when user hits the end of page
   $(window).scroll(function() {
-    if ($(window).scrollTop() + $(window).height() >= $('body').height()) {
+    if ($(window).scrollTop() + $(window).height() >= getDocHeight() -10 ) {
       $('button').click();
     }
   });
