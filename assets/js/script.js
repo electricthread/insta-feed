@@ -6,7 +6,7 @@ $(function() {
     insta_next_url
 
   insta_container.instagram({
-      hash: 'coldplaylive',
+      hash: 'u2live',
       clientId : 'a0ce1d337ae34c388aa2471f1065ed99',
       image_size: 'low_resolution',
       show : 20,
