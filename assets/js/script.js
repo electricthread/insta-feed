@@ -12,7 +12,6 @@ $(function() {
       show : 20,
       onComplete : function (photos, data) {
       insta_next_url = data.pagination.next_url
-      console.log(data);
     }
   })
 
