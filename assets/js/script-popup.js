@@ -46,7 +46,7 @@ function getDocHeight() {
 }
   // Fake 'click' when user hits the end of page
   $(window).scroll(function() {
-    if ($(window).scrollTop() + $(window).height() >= $(document).height() ) {
+    if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
       $('button').click();
     }
   });
