@@ -20,7 +20,7 @@ li {
 /*  float: left;*/
   list-style: none;
   margin: 1% 2%;
-  width: 89%;
+  width: 50%;
 }
 li:hover {
   background-color: #ccc;
