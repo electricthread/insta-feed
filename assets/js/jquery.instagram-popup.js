@@ -53,7 +53,7 @@
       return $('<li>')
         .addClass('instagram-placeholder')
         .attr('id', 'empty')
-        .append($('<p>').html('No photos for this query'));
+        .append($('<p>').html('No more photos were found'));
     }
 
     function composeRequestURL() {
