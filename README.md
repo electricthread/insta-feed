@@ -3,6 +3,8 @@ insta-feed
 
 Static page Instagram Feed examples
 
+http://www.electricthread.com/insta-feed/
+
 Relies on:
 http://potomak.github.com/jquery-instagram/ jQuery plugin
 Colorbox plugin (http://www.jacklmoore.com/colorbox)
